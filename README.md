@@ -34,10 +34,14 @@ _target dummies show damage dealt to them and can be equipped with armor_
 - Wizards (Fabric): [Mod Page](https://www.curseforge.com/minecraft/mc-mods/wizards)
 _Add's 3 kinds of magic. Including wands and staffs. It also integrates with the BetterEnd_
 _and BetterNether Mod_
+- [Paladins and Priests (RPG Fabric)](https://www.curseforge.com/minecraft/mc-mods/paladins-and-priests)
+_Stand together! Heal and protect your allies!_
+- [Archers (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/archers)
+_Draw, Release, Conquer - Master the art of Archery!_
+- [Rogues & Warriors (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/rogues-and-warriors)
+_Silent Blades, Mighty Blows - Dominate with martial skills_
 - Better Combat: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus)
 _Add's animations and some other tweaks to combat_
-- Epic Paladins: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/epic-paladins)
-_Add's more armor, ores and bosses_
 
 ### _Utility Mods_
 - Sodium: [Mod Page](https://modrinth.com/mod/sodium)
@@ -62,8 +66,6 @@ _Adds a mod menu to view the list of mods you have installed_
 _Adds the ability to search for keybinds using their name in the KeyBinding menu_
 - Adaptive Tooltips: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips)
 _Better tooltips than vanilla_
-- Phospher: [Mod Page](https://modrinth.com/mod/phosphor)
-_No-compromises lighting engine optimization mod_
 - Lithium: [Mod Page](https://modrinth.com/mod/lithium)
 _No-compromises game logic/server optimization mod_
 
