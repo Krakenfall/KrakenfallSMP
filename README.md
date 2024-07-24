@@ -1,6 +1,6 @@
 # KrakenfallSMP
 ## _Client Mod List v0.2.0 BETA_
-Please visit the [beta releases](https://github.com/Krakenfall/KrakenfallSMP/releases/tag/beta) page to download the Curseforge profile. [Import the profile](https://support.curseforge.com/en/support/solutions/articles/9000198501-exporting-and-importing-modpacks) in Curseforge and the mods below will be automatically installed. 
+Please visit the [releases](https://github.com/Krakenfall/KrakenfallSMP/releases) page to get this modpack for CurseForge.
 
 ### _Gameplay Mods_
 - Create Fabric: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/create-fabric)
