@@ -1,14 +1,14 @@
 {
   "version": {
     "didShowWelcome [default: false]": true,
-    "check [default: true]": true
+    "check [default: true]": false
   },
   "ui": {
     "showUpdateInfo [default: true]": true,
-    "preferModrinthForUpdates [default: true]": true,
+    "useModrinthForUpdates [default: false]": false,
     "forceBetterXPreset [default: true]": true,
-    "suppressExperimentalDialogOnLoad [default: false]": false,
-    "iAmNotTheDonorType [default: false]": false
+    "suppressExperimentalDialogOnLoad [default: false]": true,
+    "notTheDonorType [default: true]": true
   },
   "auto_sync": {
     "enabled [default: true]": true,
