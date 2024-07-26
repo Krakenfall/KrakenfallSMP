@@ -1,5 +1,6 @@
 # KrakenfallSMP
-## _Client Mod List v0.1.0_
+## _Client Mod List v0.2.0 BETA_
+Please visit the [releases](https://github.com/Krakenfall/KrakenfallSMP/releases) page to get this modpack for CurseForge.
 
 ### _Gameplay Mods_
 - Create Fabric: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/create-fabric)
