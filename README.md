@@ -1,103 +1,88 @@
 # KrakenfallSMP
-## _Client Mod List v0.2.0 BETA_
+## _Client Mod List v0.2.3 BETA_
 Please visit the [releases](https://github.com/Krakenfall/KrakenfallSMP/releases) page to get this modpack for CurseForge.
 
-### _Gameplay Mods_
-- Create Fabric: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/create-fabric)
-_It's Create. But in Fabric._
-- Create Deco Fabric: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/create-deco-fabric)
-_Adds several new types of decorative blocks that take advantage of Create's palette_
-_and production opportunities_
-- CC: Restiched: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/cc-restitched)
-_Fabric Port of Computer Craft. Add's Scripting in Lua on in game computers and "turtles"_
-- Kraken Extensions:
-_Custom mod for adding custom content and can be expanded if neccessary_
-- Bountiful (Fabric): [Mod Page](https://www.curseforge.com/minecraft/mc-mods/cc-restitched)
-_Bounty boards can be found throughout the world in villages, and they'll generate bounties inside of them._
-_These bounties often ask for you to bring back an item, or kill some mobs in return for whatever rewards they're offering._
-_**We are using this as the primary method of making money. I'm open to more money making systems. just lmk_
-- Waystones (Fabric Edition): [Mod Page](https://www.curseforge.com/minecraft/mc-mods/waystones-fabric)
-_adds waystone blocks that the player can return to once they've been activated, either through a Warp Scroll,_
-_a rechargeable Warp Stone, or by using an existing waystone to hop from one to the other._
-- BetterEnd: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/betterend)
-_This mod adds new biomes into the End and modifying existing ones. Each biome has its own atmosphere,_
-_resources and mobs. The sky will have custom outlook with purple nebulas and stars. All biomes have_
-_custom music, sounds and effects to make them alive and interesting to explore.BetterEnd have a custom_
-_End generator and custom structures for Central Island. With new generator ind islands will have_
-_different shapes, terrain, will be on different height. Inside islands you can find caves with unique resources._
-- BetterNether: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/betternether)
-_The mod adds new biomes, plants and materials to the Nether. Among them there are new challenging_
-_monsters like the Naga, or dark dungeons where the creatures of Nether have taken over._
-- Decorative Blocks: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks)
-_A small mod that adds several new decorative blocks_
-- Target Dummy: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
-_target dummies show damage dealt to them and can be equipped with armor_
-- Wizards (Fabric): [Mod Page](https://www.curseforge.com/minecraft/mc-mods/wizards)
-_Add's 3 kinds of magic. Including wands and staffs. It also integrates with the BetterEnd_
-_and BetterNether Mod_
-- [Paladins and Priests (RPG Fabric)](https://www.curseforge.com/minecraft/mc-mods/paladins-and-priests)
-_Stand together! Heal and protect your allies!_
-- [Archers (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/archers)
-_Draw, Release, Conquer - Master the art of Archery!_
-- [Rogues & Warriors (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/rogues-and-warriors)
-_Silent Blades, Mighty Blows - Dominate with martial skills_
-- Better Combat: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus)
-_Add's animations and some other tweaks to combat_
-
-### _Utility Mods_
-- Sodium: [Mod Page](https://modrinth.com/mod/sodium)
-_Modern rendering engine and client-side optimization mod for Minecraft. (Think Optifine)_
-- Indium: [Mod Page](https://modrinth.com/mod/indium)
-_Sodium addon providing support for the Fabric Rendering API_
-- Iris Shaders: [Mod Page](https://modrinth.com/mod/iris)
-_A modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs_
-- WTHIT: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/wthit)
-_A mod that adds an ingame tooltip with information about what block (or fluid) the player is looking at._
-- EMI: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/emi)
-_EMI is a featureful and accessible item and recipe viewer (Think JEI+Extras)_
-- AppleSkin: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/appleskin)
-_Adds a visualization of saturation and exhaustion_
-- Xaero's World Map: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map)
-_Xaero's World Map mod adds a self-writing fullscreen map_
-- Xaero's Minimap: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)
-_Adds a minimap and way point system_
-- Mod Menu: [Mod Page](https://modrinth.com/mod/modmenu?fromcf)
-_Adds a mod menu to view the list of mods you have installed_
-- Controlling: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/controlling)
-_Adds the ability to search for keybinds using their name in the KeyBinding menu_
-- Adaptive Tooltips: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips)
-_Better tooltips than vanilla_
-- Lithium: [Mod Page](https://modrinth.com/mod/lithium)
-_No-compromises game logic/server optimization mod_
-
-### _Librarys/Dependencies_
-- Bad Packets: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/badpackets)
-_Bad Packets is a library that allows packet messaging between different modding platforms_
-- Balm (Fabric Edition): [Mod Page](https://www.curseforge.com/minecraft/mc-mods/balm-fabric)
-_Abstraction Layer (but not really)™ for Blay's multiplatform mods_
-- BCLib: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/bclib)
-_This is a library mod for BetterEnd, BetterNether, Eden Ring and possible future mods from BetterX team_
-- Cloth Config: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
-_A config screen api_
-- Farbic API: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-_The core library for the most common hooks and inter-compatibility measures utilized by mods_
-_using the Fabric toolchain_
-- Fabric Language Kotlin: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin)
-_Enables usage of the Kotlin programming language for Fabric mods_
-- GeckoLib: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/geckolib)
-_An animation engine for Minecraft Mods, with support for complex 3D keyframe-based animations, 30+_
-_easings, concurrent animation support, sound and particle keyframes, event keyframes, and more_
-- Kambrik: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/kambrik)
-_A general purpose Kotlin library for Fabric_
-- Moonlight Lib: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/selene)
-_This is a small set of utilities that offer a set of very specific features_
-- playerAnimator: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/playeranimator)
-_Player animation library_
-- Runes [Fabric]: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/rune-crafting)
-_Adds the required runes for "Wizards"_
-- Spell Engines: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/spell-engine)
-_Spell API for "Wizards"_
-- Spell Power Attributes [Fabric]: [Mod Page](https://www.curseforge.com/minecraft/mc-mods/spell-power)
-_Spell API for "Wizards"_
-- YetAnotherConfigLib: [Mod Page](https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortType=1&search=YetAnotherCOnfig)
-_A builder-based configuration library for Minecraft._
+### _Mods_
+- [Adaptive Tooltips (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips)
+- [AppleSkin (by squeek502)](https://www.curseforge.com/minecraft/mc-mods/appleskin)
+- [Archers (RPG Series) (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/archers)
+- [Athena (by CodexAdrian)](https://www.curseforge.com/minecraft/mc-mods/athena)
+- [AzureLib Armor (by AzureDoomC)](https://www.curseforge.com/minecraft/mc-mods/azurelib-armor)
+- [bad packets (by badasintended)](https://www.curseforge.com/minecraft/mc-mods/badpackets)
+- [Balm (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/balm-fabric)
+- [BCLib (by Quiqueck)](https://www.curseforge.com/minecraft/mc-mods/bclib)
+- [Better Combat [Fabric & Forge] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus)
+- [BetterEnd (by Quiqueck)](https://www.curseforge.com/minecraft/mc-mods/betterend)
+- [BetterNether (by Quiqueck)](https://www.curseforge.com/minecraft/mc-mods/betternether)
+- [Bountiful (Fabric) (by Ejektaflex)](https://www.curseforge.com/minecraft/mc-mods/bountiful-fabric)
+- [CC: Tweaked (by SquidDev)](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
+- [CC:C Bridge (by Sammy_echt)](https://www.curseforge.com/minecraft/mc-mods/cccbridge)
+- [Chipped (by terrariumearth)](https://www.curseforge.com/minecraft/mc-mods/chipped)
+- [Cloth Config API (Fabric/Forge/NeoForge) (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
+- [Clumps (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/clumps)
+- [Controlling (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/controlling)
+- [Create Deco (by talrey)](https://www.curseforge.com/minecraft/mc-mods/create-deco)
+- [Create Fabric (by tropheusj)](https://www.curseforge.com/minecraft/mc-mods/create-fabric)
+- [Create Slice & Dice (by possible_triangle)](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)
+- [Create: Steam 'n' Rails (by IThundxr)](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
+- [Croptopia (by thethonk)](https://www.curseforge.com/minecraft/mc-mods/croptopia)
+- [Decorative Blocks (by stohun)](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks)
+- [Diagonal Fences [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/diagonal-fences)
+- [Diagonal Walls (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/diagonal-walls)
+- [Diagonal Windows [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/diagonal-windows)
+- [Elytra Slot (Fabric/Forge/Quilt) (by TheIllusiveC4)](https://www.curseforge.com/minecraft/mc-mods/elytra-slot)
+- [EMI (by EmilyPloszaj)](https://www.curseforge.com/minecraft/mc-mods/emi)
+- [EpheroLib (by thethonk)](https://www.curseforge.com/minecraft/mc-mods/epherolib)
+- [Extended Drawers (by MattiDragon)](https://www.curseforge.com/minecraft/mc-mods/extended-drawers)
+- [Fabric API (by modmuss50)](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
+- [Fabric Language Kotlin (by modmuss50)](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin)
+- [Farmer's Delight Refabricated (by MerchantPug)](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-refabricated)
+- [Flan (Fabric) (by flemmli97)](https://www.curseforge.com/minecraft/mc-mods/flan)
+- [Forge Config API Port (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/forge-config-api-port-fabric)
+- [Fusion (Connected Textures) (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures)
+- [GeckoLib (by Gecko)](https://www.curseforge.com/minecraft/mc-mods/geckolib)
+- [Indium (by comp500)](https://www.curseforge.com/minecraft/mc-mods/indium)
+- [Iris Shaders (by coderbot)](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
+- [Iron Chests: Restocked (by ThatGravyBoat)](https://www.curseforge.com/minecraft/mc-mods/ironchests)
+- [Jade 🔍 (by Snownee)](https://www.curseforge.com/minecraft/mc-mods/jade)
+- [Just Enough Farmer's Recipes (by Anxxitty__)](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-jei-plugin)
+- [Just Enough Items (JEI) (by mezz)](https://www.curseforge.com/minecraft/mc-mods/jei)
+- [Kambrik (by Ejektaflex)](https://www.curseforge.com/minecraft/mc-mods/kambrik)
+- [KleeSlabs (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/kleeslabs-fabric)
+- [Lithium (Fabric) (by JellySquid)](https://www.curseforge.com/minecraft/mc-mods/lithium)
+- [Localized Chat (by Kreezxil)](https://www.curseforge.com/minecraft/mc-mods/localized-chat)
+- [Lootr (Fabric) (by Noobanidus)](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric)
+- [LuckPerms (by Iucko)](https://www.curseforge.com/minecraft/mc-mods/luckperms)
+- [MidnightLib (by TeamMidnightDust)](https://www.curseforge.com/minecraft/mc-mods/midnightlib)
+- [MmmMmmMmmMmm (Target Dummy) (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
+- [Mod Menu (by Prospector)](https://www.curseforge.com/minecraft/mc-mods/modmenu)
+- [Moonlight Lib (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/selene)
+- [Paladins & Priests (RPG Series) (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/paladins-and-priests)
+- [playerAnimator (by KosmX)](https://www.curseforge.com/minecraft/mc-mods/playeranimator)
+- [Presence Footsteps (by S0llace)](https://www.curseforge.com/minecraft/mc-mods/presence-footsteps)
+- [Puzzles Lib [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
+- [Ranged Weapon API (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/ranged-weapon-api)
+- [Rechiseled (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/rechiseled)
+- [Rechiseled: Create (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/rechiseled-create)
+- [Repurposed Structures (Fabric/Quilt) (by telepathicgrunt)](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric)
+- [Resourceful Lib (by ThatGravyBoat)](https://www.curseforge.com/minecraft/mc-mods/resourceful-lib)
+- [Runes [Fabric] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/rune-crafting)
+- [Searchables (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/searchables)
+- [Shield API (by TheRedBrain)](https://www.curseforge.com/minecraft/mc-mods/shield-api)
+- [Sildur's Enhanced Default (by SildurFX)](https://www.curseforge.com/minecraft/shaders/sildurs-enhanced-default)
+- [Sodium (by JellySquid)](https://www.curseforge.com/minecraft/mc-mods/sodium)
+- [Spell Engine (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/spell-engine)
+- [Spell Power Attributes [Fabric] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/spell-power)
+- [SuperMartijn642's Config Lib (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)
+- [SuperMartijn642's Core Lib (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)
+- [Supplementaries (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
+- [Terralith (by Starmute)](https://www.curseforge.com/minecraft/mc-mods/terralith)
+- [Trinkets (Fabric) (by EmilyPloszaj)](https://www.curseforge.com/minecraft/mc-mods/trinkets)
+- [Universal Graves (by Patbox)](https://www.curseforge.com/minecraft/mc-mods/universal-graves)
+- [Waystones (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/waystones-fabric)
+- [Wizards (RPG Series) (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/wizards)
+- [WorldEdit (by sk89q)](https://www.curseforge.com/minecraft/mc-mods/worldedit)
+- [WTHIT (by badasintended)](https://www.curseforge.com/minecraft/mc-mods/wthit)
+- [Xaero's Minimap (by xaero96)](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)
+- [Xaero's World Map (by xaero96)](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map)
+- [YetAnotherConfigLib (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/yacl)
