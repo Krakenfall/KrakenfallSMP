@@ -8,14 +8,15 @@
 # - Jack Wen
 
 # Change these variables based on your domain info
-$domain             = "subdomain.cloudelements.ca"
-$certFileName       = "subdomain-cloudelements-ca"
-$email              = "info@cloudelements.ca"
-$keyVaultName       = "snbdnstestkv"
-$authHookPath       = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\azure\az-auth.ps1"
-$cleanupHookPath    = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\azure\cleanup.ps1"
-$env:AZ_DNS_RG_NAME = "DNSTestRg"
-$env:TXT_NAME       = "_acme-challenge"
+$domain             = "$env:CERTBOT_DOMAIN"
+$certFileName       = "$($env:CERTBOT_DOMAIN.Replace('.','-'))"
+$email              = "$env:DOMAIN_EMAIL"
+$keyVaultName       = "$env:KEYVAULT_NAME"
+$authHookPath       = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\az-auth.ps1"
+$cleanupHookPath    = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\cleanup.ps1"
+# Should be in the var group
+#$env:AZ_DNS_RG_NAME = "DNSTestRg"
+#$env:TXT_NAME       = "_acme-challenge"
 
 # install openssl
 choco install openssl --no-progress
@@ -40,5 +41,5 @@ openssl pkcs12 -export -out "$certFileName.pfx" -inkey privkey.pem -in fullchain
 
 # Import certificate to KeyVault
 # __PKPWD__ is a secret pipeline (group) variable whose value is mapped to a KV secret
-$password = ConvertTo-SecureString -String __PKPWD__ -AsPlainText -Force
+$password = ConvertTo-SecureString -String $env:PKPWD -AsPlainText -Force
 Import-AzKeyVaultCertificate -VaultName $keyVaultName -Name $certFileName -FilePath "$certFileName.pfx" -Password $password
