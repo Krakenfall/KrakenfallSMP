@@ -38,7 +38,7 @@ cd "C:\Program Files (x86)\Certbot\bin"
 cd "C:\Certbot\live\$domain\"
 
 # Convert certificate to .pfx
-openssl pkcs12 -export -out "$certFileName.pfx" -inkey privkey.pem -in fullchain.pem -passout pass:$(PKPWD)
+openssl pkcs12 -export -out "$certFileName.pfx" -inkey privkey.pem -in fullchain.pem -passout pass:$PKPWD
 
 # Import certificate to KeyVault
 # __PKPWD__ is a secret pipeline (group) variable whose value is mapped to a KV secret
