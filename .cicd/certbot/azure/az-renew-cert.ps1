@@ -8,15 +8,14 @@
 # - Jack Wen
 
 # Change these variables based on your domain info
-$domain             = "$env:CERTBOT_DOMAIN"
-$certFileName       = "$($env:CERTBOT_DOMAIN.Replace('.','-'))"
-$email              = "$env:DOMAIN_EMAIL"
-$keyVaultName       = "$env:KEYVAULT_NAME"
+$domain             = "$(CERTBOT_DOMAIN)"
+$certFileName       = "$(CERTBOT_DOMAIN)".Replace('.','-')
+$email              = "$(DOMAIN_EMAIL)"
+$keyVaultName       = "$(KEYVAULT_NAME)"
 $authHookPath       = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\az-auth.ps1"
 $cleanupHookPath    = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\cleanup.ps1"
-# Should be in the var group
-#$env:AZ_DNS_RG_NAME = "DNSTestRg"
-#$env:TXT_NAME       = "_acme-challenge"
+$env:AZ_DNS_RG_NAME = "$(AZ_DNS_RG_NAME)"
+$env:TXT_NAME       = "$(TXT_NAME)"
 
 # install openssl
 choco install openssl --no-progress
@@ -37,9 +36,9 @@ cd "C:\Program Files (x86)\Certbot\bin"
 cd "C:\Certbot\live\$domain\"
 
 # Convert certificate to .pfx
-openssl pkcs12 -export -out "$certFileName.pfx" -inkey privkey.pem -in fullchain.pem -passout pass:__PKPWD__
+openssl pkcs12 -export -out "$certFileName.pfx" -inkey privkey.pem -in fullchain.pem -passout pass:$(PKPWD)
 
 # Import certificate to KeyVault
 # __PKPWD__ is a secret pipeline (group) variable whose value is mapped to a KV secret
-$password = ConvertTo-SecureString -String $env:PKPWD -AsPlainText -Force
+$password = ConvertTo-SecureString -String "$(PKPWD)" -AsPlainText -Force
 Import-AzKeyVaultCertificate -VaultName $keyVaultName -Name $certFileName -FilePath "$certFileName.pfx" -Password $password
