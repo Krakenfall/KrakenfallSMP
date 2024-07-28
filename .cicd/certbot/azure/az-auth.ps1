@@ -6,8 +6,12 @@
 # Authors:
 # - Nicholas Briglio
 # - Jack Wen
-
+param(
+    [string]$txtName,
+    [string]$domain,
+    [string]$azDnsRgName
+)
 # Create the TXT record in the Azure DNS Zone
-New-AzDnsRecordSet -Name "$(TXT_NAME)" -RecordType TXT -ZoneName "$(CERTBOT_DOMAIN)" -ResourceGroupName "$(AZ_DNS_RG_NAME)" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$($env:CERTBOT_VALIDATION)")
+New-AzDnsRecordSet -Name "$txtName" -RecordType TXT -ZoneName "$domain" -ResourceGroupName "$azDnsRgName" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$($env:CERTBOT_VALIDATION)")
 
 Start-Sleep -Seconds 120
