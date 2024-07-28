@@ -6,16 +6,17 @@
 # Authors:
 # - Nicholas Briglio
 # - Jack Wen
-
+param(
+    [string]$email
+)
 # Change these variables based on your domain info
-$domain             = "$(CERTBOT_DOMAIN)"
-$certFileName       = "$(CERTBOT_DOMAIN)".Replace('.','-')
-$email              = "$(DOMAIN_EMAIL)"
-$keyVaultName       = "$(KEYVAULT_NAME)"
+$domain             = "$($env:CERTBOT_DOMAIN)"
+$keyVaultName       = "$($env:KEYVAULT_NAME)"
+$env:AZ_DNS_RG_NAME = "$($env:AZ_DNS_RG_NAME)"
+$env:TXT_NAME       = "$($env:TXT_NAME)"
+$certFileName       = $domain.Replace('.','-')
 $authHookPath       = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\az-auth.ps1"
 $cleanupHookPath    = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\cleanup.ps1"
-$env:AZ_DNS_RG_NAME = "$(AZ_DNS_RG_NAME)"
-$env:TXT_NAME       = "$(TXT_NAME)"
 
 # install openssl
 choco install openssl --no-progress

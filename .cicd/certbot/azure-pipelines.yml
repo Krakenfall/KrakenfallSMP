@@ -34,5 +34,7 @@ stages:
       inputs:
         azureSubscription: $(serviceConnection)
         ScriptPath: '.cicd/certbot/azure/az-renew-cert.ps1'
+        ScriptArguments:
+          -email '$(DOMAIN_EMAIL)'
         azurePowerShellVersion: LatestVersion
       enabled: true
