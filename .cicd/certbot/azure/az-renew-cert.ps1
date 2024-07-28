@@ -8,16 +8,18 @@
 # - Jack Wen
 param(
     [string]$email,
-    [string]$domain,
+    [string]$fqdn,
     [string]$keyVaultName,
     [string]$azDnsRgName,
     [string]$txtName,
     [string]$PKPWD
 )
+$segments = $fqdn.Split('.')
+$dnsZoneName = "{0}.{1}" -f $segments[$segments.Count-2], $segments[$segments.Count-1]
 # Change these variables based on your domain info
-$certFileName       = $domain.Replace('.','-')
-$authHookPath       = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\az-auth.ps1 -txtName $txtName -domain $domain -azDnsRgName $azDnsRgName"
-$cleanupHookPath    = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\cleanup.ps1 -txtName $txtName -domain $domain -azDnsRgName $azDnsRgName"
+$certFileName       = $fqdn.Replace('.','-')
+$authHookPath       = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\az-auth.ps1 -txtName $txtName -dnsZoneName $dnsZoneName -fqdn $fqdn -azDnsRgName $azDnsRgName"
+$cleanupHookPath    = "$($env:SYSTEM_DEFAULTWORKINGDIRECTORY)\.cicd\certbot\azure\cleanup.ps1 -txtName $txtName -dnsZoneName $dnsZoneName -fqdn $fqdn -azDnsRgName $azDnsRgName"
 
 # install openssl
 choco install openssl --no-progress
@@ -33,9 +35,9 @@ Start-Process -Wait -FilePath ".\certbot-beta-installer-win32.exe" -ArgumentList
 cd "C:\Program Files (x86)\Certbot\bin"
 
 # Request a new certificate
-.\certbot.exe certonly --manual --preferred-challenges=dns --manual-auth-hook $authHookPath -d $domain --email $email --manual-cleanup-hook $cleanupHookPath --agree-tos -n
+.\certbot.exe certonly --manual --preferred-challenges=dns --manual-auth-hook $authHookPath -d $fqdn --email $email --manual-cleanup-hook $cleanupHookPath --agree-tos -n
 
-cd "C:\Certbot\live\$domain\"
+cd "C:\Certbot\live\$fqdn\"
 
 # Convert certificate to .pfx
 openssl pkcs12 -export -out "$certFileName.pfx" -inkey privkey.pem -in fullchain.pem -passout pass:$PKPWD

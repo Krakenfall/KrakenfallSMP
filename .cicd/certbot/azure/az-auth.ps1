@@ -8,10 +8,13 @@
 # - Jack Wen
 param(
     [string]$txtName,
-    [string]$domain,
+    [string]$dnsZoneName,
+    [string]$fqdn,
     [string]$azDnsRgName
 )
+$subdomain = $fqdn.Replace("$dnsZoneName",'')
+$dnsRecordSetName = ($txtName,$subdomain -join '.')
 # Create the TXT record in the Azure DNS Zone
-New-AzDnsRecordSet -Name "$txtName" -RecordType TXT -ZoneName "$domain" -ResourceGroupName "$azDnsRgName" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$($env:CERTBOT_VALIDATION)")
+New-AzDnsRecordSet -Name $dnsRecordSetName -RecordType TXT -ZoneName "$dnsZoneName" -ResourceGroupName "$azDnsRgName" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$($env:CERTBOT_VALIDATION)")
 
 Start-Sleep -Seconds 120

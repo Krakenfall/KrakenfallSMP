@@ -36,7 +36,7 @@ stages:
         ScriptPath: '.cicd/certbot/azure/az-renew-cert.ps1'
         ScriptArguments:
           -email '$(DOMAIN_EMAIL)'
-          -domain '$(CERTBOT_DOMAIN)'
+          -fqdn '$(CERTBOT_DOMAIN)'
           -keyVaultName '$(KEYVAULT_NAME)'
           -azDnsRgName '$(AZ_DNS_RG_NAME)'
           -txtName '$(TXT_NAME)'

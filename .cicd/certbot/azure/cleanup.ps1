@@ -8,8 +8,11 @@
 # - Jack Wen
 param(
     [string]$txtName,
-    [string]$domain,
+    [string]$dnsZoneName,
+    [string]$fqdn,
     [string]$azDnsRgName
 )
+$subdomain = $fqdn.Replace("$dnsZoneName",'')
+$dnsRecordSetName = ($txtName,$subdomain -join '.')
 # Remove the _acme-challenge TXT record after the domain has been verified and certificate has been generated
-Remove-AzDnsRecordSet -Name "$txtName" -RecordType TXT -ZoneName "$domain" -ResourceGroupName "$azDnsRgName"
+Remove-AzDnsRecordSet -Name $dnsRecordSetName -RecordType TXT -ZoneName "$dnsZoneName" -ResourceGroupName "$azDnsRgName"
