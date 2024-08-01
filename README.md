@@ -34,6 +34,7 @@ Please visit the [releases](https://github.com/Krakenfall/KrakenfallSMP/releases
 - [Rechiseled (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/rechiseled)
 - [Rechiseled: Create (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/rechiseled-create)
 - [Repurposed Structures (Fabric/Quilt) (by telepathicgrunt)](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric)
+- [Ribbits by (by joosh_7889)](https://www.curseforge.com/minecraft/mc-mods/ribbits)
 - [Runes \[Fabric\] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/rune-crafting)
 - [Spell Engine (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/spell-engine)
 - [Spell Power Attributes \[Fabric\] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/spell-power)
