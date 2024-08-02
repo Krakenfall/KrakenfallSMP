@@ -15,7 +15,6 @@ Please visit the [releases](https://github.com/Krakenfall/KrakenfallSMP/releases
 - [Chipped (by terrariumearth)](https://www.curseforge.com/minecraft/mc-mods/chipped)
 - [Create Deco (by talrey)](https://www.curseforge.com/minecraft/mc-mods/create-deco)
 - [Create Fabric (by tropheusj)](https://www.curseforge.com/minecraft/mc-mods/create-fabric)
-- [Create Slice & Dice (by possible_triangle)](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)
 - [Create: Steam 'n' Rails (by IThundxr)](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
 - [Croptopia (by thethonk)](https://www.curseforge.com/minecraft/mc-mods/croptopia)
 - [Decorative Blocks (by stohun)](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks)
