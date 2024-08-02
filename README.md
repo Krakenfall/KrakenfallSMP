@@ -1,5 +1,5 @@
 # KrakenfallSMP
-## _Client Mod List v0.2.3 BETA_
+## _Client Mod List v0.2.5 BETA_
 Please visit the [releases](https://github.com/Krakenfall/KrakenfallSMP/releases) page to get this modpack for CurseForge.
 
 ### _Gameplay Mods_
